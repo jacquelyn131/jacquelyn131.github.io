@@ -5,72 +5,88 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 body {
-  background-color: #555;
-}
-ul {
-  font-family: 'Inconsolata', monospace;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #555;
-  color: white;
+    background-color: powderblue;
 }
 h1 {
-  font-family: 'Inconsolata', monospace;
-  text-align: center;
-  color: #d0d0d0;
-}
-h2 {
-  font-family: 'Inconsolata', monospace;
-  color: #d0d0d0;
-
+    color: blue;
 }
 p {
-  font-family: 'Inconsolata', monospace;
-  color: #d0d0d0;
+    color: red;
+}
+.myDiv {
+    display: flex;
+    border: 5px outset red;
+    background-color: lightblue;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.faq {
+    font-family:'Courier New', Courier, monospace;
+    max-width: 500px;
+    padding: 15px;
+}
+#faq-heading {
+    font-family:'Courier New', Courier, monospace;
+}
+#faq-paragraph {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+.faq-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu {
+    direction: ltr;
 }
 .box {
-  background-color: #aa80ff;
+    height: auto;
+    padding: 50px;
+    background-color: lavender;
 }
-#wrapper {
-  width: 1500px;
-  overflow: hidden;
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-#box2 {
-  float: left;
-  width: 33.33%;
+.cell {
+    flex: 1 1 200px;
+    max-height: fit-content;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: pink;
 }
-#menu {
-  float: left;
-  width: 250px;
-
+.comic-box {
+    height: auto;
+    max-width: 100%;
+    padding: 50px;
+    background-color: lavender;
 }
-#first {
-  float: left;
-  width: 600px;
-  border: 1px black;
+.comic-column {
+    display: flex;
+    flex-wrap: wrap;
 }
-#second {
-  
-  overflow: hidden;
-  float:right;
-  
+.comic-cell {
+    flex: 1 1 200px;
+    height: fit-content;
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.comic-image {
+    max-width: 100%;
+}
+#comic-title {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.comic-menu {
+    float: right;
 }
 
 
@@ -81,54 +97,64 @@ p {
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-
-<div class = "box">
-  <h2 style="text-align: right">
-    Jacquelyn Shelby
-  </h2>
-</div>
-<div id="wrapper">
-  <!--<div id="box2">
-    <ul>
-      <li><a href="site.html">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>-->
-
-
-  
-  <div id="box2">
-    <div>
-      <h2>Brief summary</h2>
-        <p>I am an Interdisciplinary BA student. I like games and manga, running and <br>
-          the outdoors. Here is my projects.</p>
+      <a href="website.html"><p>logo</p></a>
+      <h1>Jacquelyn Shelby</h1>
+      <nav class="menu">
+          <a href="faq.html">FAQ</a>
+          <a href="works.html">works</a>
+          <a href="about.html">About</a>
+      </nav>
       
+      <img src="https://i.imgur.com/IJolUOt.png" alt="Jacquelyn" width="350" height="142">
+      <!--FAQ section-->
+      <h1>FAQ</h1>
+      <div class="box">
+        <div class="row">
+            <div class="cell">
+            <h2 id="faq-heading">Why does she draw eyes like that?</h2>
+            <p id="faq-paragraph">Jacquelyn Shelby is a self taught artist who learned while she was studying abroad in
+                China. She learned from how-to-draw books from different bookstores which were mostly by Japanese or
+                Korean artists. That's how the books told her to draw eyes so that's how she learned to draw eyes when
+                she was first learning. ^_^
+
+            </p>
+        </div>
+        <div class="cell">
+            <img src="pics/eyeball.jpg" alt="eyeball" width="142" height="142">
+        </div>
+        </div>
     </div>
     
+    <!-- works section-->
+    <h1>works</h1>
     <div>
-      <h2>Projects</h2>
-      <p>games: <br>- 
-        <a href = "https://jacquelyn131.itch.io/you-should-go-to-the-nail-salon">you should go to the nail salon
-        </a>
-      </p>
-      <img src="https://i.imgur.com/HhN2GfL.png" width = "125" height = "125">
+      <h2>comics</h2>
+      <ul>
+        <li><a href="im_scared_of_getting_r_worded.html">i'm scared of getting r-worded</a></li>
+        <li>coming out as liking men</li>
+        <li>coming out as wanting a vagina</li>
+      </ul>
+      <h2>pieces</h2>
+      <ul>
+        <li>isolation</li>
+      </ul>
+    </div>
+    <!--about section-->
+    <h1>About</h1>
+    <div class="box">
+      <div class="row">
+        <div class="cell">
+          <h2 id="faq-heading">About</h2>
+          <p id="faq-paragraph">Jacquelyn Shelby is an artist. She is self-taught and makes art that focuses on the themes of trauma, depression, being scared, and mental illness.
+          </p>
+        </div>
+        <div class="cell">
+          <img src="pics/drawing.jpg" alt="drawing" width="150" height="142">
+        </div>
+      </div>
     </div>
     <div>
-      <p>other: <br>
-        - car list
-      </p>
+        <p>Business Inq: hiitsjacquelyn@gmail.com</p>
     </div>
-  </div>
-
-  <div id="box2">
-    <img src="https://i.imgur.com/wB4bfUw.jpg" alt = "human face" width = "250" height = "250">
-  </div>
-  
-</div>
-
-
-</body>
+    </body>
 </html>
