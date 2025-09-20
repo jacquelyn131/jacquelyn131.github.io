@@ -1,0 +1,83 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+.myDiv {
+    display: flex;
+    border: 5px outset red;
+    background-color: lightblue;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.faq {
+    font-family:'Courier New', Courier, monospace;
+    max-width: 500px;
+    padding: 15px;
+}
+#faq-heading {
+    font-family:'Courier New', Courier, monospace;
+}
+#faq-paragraph {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+}
+.faq-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu {
+    direction: ltr;
+}
+.box {
+    height: auto;
+    padding: 50px;
+    background-color: lavender;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+    flex: 1 1 200px;
+    max-height: fit-content;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.comic-box {
+    height: auto;
+    max-width: 100%;
+    padding: 50px;
+    background-color: lavender;
+}
+.comic-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+.comic-cell {
+    flex: 1 1 200px;
+    height: fit-content;
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.comic-image {
+    max-width: 100%;
+}
+#comic-title {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.comic-menu {
+    float: right;
+}
