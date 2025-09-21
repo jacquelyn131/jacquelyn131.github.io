@@ -22,6 +22,21 @@ a {
 li {
     font-size: 17px;
 }
+@media screen and (max-width: 600px) {
+  
+  .c-nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .comic-box {
+    height: auto;
+    max-width: 100%;
+    padding: 5px;
+    background-color: lavender;
+}
+}
 .myDiv {
     display: flex;
     border: 5px outset red;
@@ -92,7 +107,10 @@ li {
 .comic-box {
     height: auto;
     max-width: 100%;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
     background-color: lavender;
 }
 .comic-column {
