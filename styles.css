@@ -1,19 +1,19 @@
 body {
-    background-color: powderblue;
+    background-color: #ffe8f8;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #db008f;
     text-align: center;
 }
 h2 {
     font-family: 'Courier New', Courier, monospace;
-    color: black;
+    color: #db008f;
     font-weight: bold;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #db008f;
     font-size: 17px;
 }
 a {
@@ -49,8 +49,8 @@ li {
 }
 .myDiv {
     display: flex;
-    border: 5px outset red;
-    background-color: lightblue;
+    border: 5px outset #ffbae7;
+    background-color: #ffe8f8;
     flex-direction: row;
     justify-content: space-between;
 
@@ -100,7 +100,7 @@ li {
 .box {
     height: auto;
     padding: 50px;
-    background-color: lavender;
+    background-color: #ffbae7;
 }
 .row {
     display: flex;
@@ -111,8 +111,8 @@ li {
     flex: 1 1 200px;
     max-height: fit-content;
     padding: 15px;
-    border: 1px solid black;
-    background-color: pink;
+    border: 1px solid #db008f;
+    background-color: #ffbae7;
 }
 .comic-box {
     height: auto;
@@ -160,7 +160,7 @@ li {
 }
 .c-nav__item {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #db008f;
 }
 .c-nav__link {
     display: block;
