@@ -117,7 +117,7 @@ li {
 .comic-box {
     height: auto;
     max-width: 100%;
-    background-color: lavender;
+    background-color: #ffe8f8;
 }
 .comic-column {
     display: flex;
@@ -128,8 +128,8 @@ li {
     height: fit-content;
     max-width: 100%;
     padding: 15px;
-    border: 1px solid black;
-    background-color: pink;
+    border: 1px solid #db008f;
+    background-color: #ffbae7;
 }
 .comic-image {
     max-width: 100%;
@@ -148,7 +148,7 @@ li {
     width: 50%;
 }
 .c-nav {
-    border: 1px solid #ccc;
+    border: 1px solid #ffe8f8;
     border-width: 1px 0;
     list-style: none;
     margin: 0;
@@ -167,6 +167,6 @@ li {
 }
 .works-items {
     font-family: 'Courier New', Courier, monospace;
-    color: black;
+    color: #db008f;
     font-weight: bold;
 }
